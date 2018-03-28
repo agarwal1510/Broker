@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ETSS</display-name>
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>ViewBlockController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.ViewBlockController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewBlockController</servlet-name>
+		<url-pattern>/ViewBlockController1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BlockStatusController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.BlockStatusController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BlockStatusController</servlet-name>
+		<url-pattern>/changeStatus</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>FilterController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.FilterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FilterController</servlet-name>
+		<url-pattern>/filter</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewOpenOrders</servlet-name>
+		<servlet-class>com.sapient.survival.controller.TraderOrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewOpenOrders</servlet-name>
+		<url-pattern>/viewOrders</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NewBlocks</servlet-name>
+		<servlet-class>com.sapient.survival.controller.NewBlockController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewBlocks</servlet-name>
+		<url-pattern>/newBlock</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BlockController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.BlockController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BlockController</servlet-name>
+		<url-pattern>/viewBlocks</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>OrderController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.OrderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderController</servlet-name>
+		<url-pattern>/createorder</url-pattern>
+		<url-pattern>/viewOrder</url-pattern>
+		<url-pattern>/delete</url-pattern>
+		<url-pattern>/placeOrder</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>ViewOrders</servlet-name>
+		<servlet-class>com.sapient.survival.controller.ViewOrders</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewOrders</servlet-name>
+		<url-pattern>/ViewOrders1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SimulationController</servlet-name>
+		<servlet-class>com.sapient.survival.controller.ExecuteFill</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimulationController</servlet-name>
+		<url-pattern>/simulate</url-pattern>
+	</servlet-mapping>
+</web-app>
